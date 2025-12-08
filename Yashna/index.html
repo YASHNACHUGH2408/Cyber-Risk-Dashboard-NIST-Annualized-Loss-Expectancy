@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Risk Assessment Dashboard using NIST Model</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="animated-bg"></div>
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-shield-alt"></i>
+                CyberRisk Dashboard
+            </a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#tech">Tech Stack</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Cyber Risk Assessment <span>Dashboard</span></h1>
+            <p>Using NIST Model for Real-time Risk Calculation & Analysis</p>
+            <a href="#demo" class="cta-button">Try Live Demo</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About the Project</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>NIST Risk Assessment Model</h3>
+                    <p>This project demonstrates live calculation of cyber-risk metrics using the NIST methodology. It provides an interactive interface for understanding and evaluating cybersecurity risks in financial terms.</p>
+                    <p>Cybersecurity risk management is essential for organizations to protect their assets, data, and reputation. By quantifying risks in financial terms, businesses can make informed decisions about security investments and priorities.</p>
+                    
+                    <div class="nist-models">
+                        <div class="nist-model">
+                            <h4>SLE (Single Loss Expectancy)</h4>
+                            <p>The monetary value expected from the occurrence of a risk on a single asset.</p>
+                        </div>
+                        <div class="nist-model">
+                            <h4>EF (Exposure Factor)</h4>
+                            <p>The percentage of asset value that would be lost if a risk occurs.</p>
+                        </div>
+                        <div class="nist-model">
+                            <h4>ARO (Annualized Rate of Occurrence)</h4>
+                            <p>The estimated frequency with which a threat is expected to occur in a year.</p>
+                        </div>
+                        <div class="nist-model">
+                            <h4>ALE (Annualized Loss Expectancy)</h4>
+                            <p>The expected monetary loss per year due to a specific risk.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="architecture-diagram">
+                    <h3 class="arch-title">System Architecture</h3>
+                    <div class="arch-components">
+                        <div class="arch-component">
+                            <i class="fas fa-file-excel"></i>
+                            <span>Excel Backend</span>
+                        </div>
+                        <div class="arch-arrow" style="width: 80px; left: 130px;"></div>
+                        <div class="arch-component">
+                            <i class="fab fa-python"></i>
+                            <span>Flask API</span>
+                        </div>
+                        <div class="arch-arrow" style="width: 80px; left: 310px;"></div>
+                        <div class="arch-component">
+                            <i class="fas fa-code"></i>
+                            <span>Frontend UI</span>
+                        </div>
+                        <div class="arch-arrow" style="width: 80px; left: 490px;"></div>
+                        <div class="arch-component">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Real-time Results</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Real-time SLE & ALE Computation</h3>
+                    <p>Instantly calculate Single Loss Expectancy and Annualized Loss Expectancy based on your inputs.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <h3>Interactive Sliders</h3>
+                    <p>Adjust asset value, exposure factor, and attack frequency with intuitive slider controls.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Dynamic Results Panel</h3>
+                    <p>See risk metrics update in real-time as you adjust the input parameters.</p>
+                </div>
+                
+                <div class="feature-card coming-soon">
+                    <div class="feature-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Risk Heatmap</h3>
+                    <p>Visual representation of risk levels across different assets and threats (Coming Soon).</p>
+                </div>
+                
+                <div class="feature-card coming-soon">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Automatic Risk Color Output</h3>
+                    <p>Color-coded risk indicators for quick assessment of threat levels (Coming Soon).</p>
+                </div>
+                
+                <div class="feature-card planned">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Charts & Analytics Reports</h3>
+                    <p>Comprehensive visualizations and detailed reports for risk analysis (Planned).</p>
+                </div>
+                
+                <div class="feature-card planned">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-export"></i>
+                    </div>
+                    <h3>Export & Save Functionality</h3>
+                    <p>Save your risk assessments and export reports for documentation (Planned).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Demo Section -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <h2 class="section-title">Live Demo</h2>
+            <div class="demo-container">
+                <h3 class="demo-title">Move sliders and compute risk instantly</h3>
+                
+                <div class="demo-controls">
+                    <div class="control-group">
+                        <label for="asset-value">Asset Value ($)</label>
+                        <div class="slider-container">
+                            <input type="range" id="asset-value" class="slider" min="1000" max="1000000" value="501533">
+                            <div class="slider-value" id="asset-value-display">$5,01,533</div>
+                        </div>
+                    </div>
+                    
+                    <div class="control-group">
+                        <label for="exposure-factor">Exposure Factor (%)</label>
+                        <div class="slider-container">
+                            <input type="range" id="exposure-factor" class="slider" min="1" max="100" value="24">
+                            <div class="slider-value" id="exposure-factor-display">24%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="control-group">
+                        <label for="attack-frequency">Attack Frequency (per year)</label>
+                        <div class="slider-container">
+                            <input type="range" id="attack-frequency" class="slider" min="0.1" max="10" step="0.1" value="1">
+                            <div class="slider-value" id="attack-frequency-display">1.0</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="results-panel">
+                    <div class="result-item">
+                        <h4>Single Loss Expectancy</h4>
+                        <div class="result-value" id="sle-value">$1,20,368</div>
+                        <div class="result-unit">per incident</div>
+                    </div>
+                    
+                    <div class="result-item">
+                        <h4>Annualized Loss Expectancy</h4>
+                        <div class="result-value" id="ale-value">$1,20,368</div>
+                        <div class="result-unit">per year</div>
+                    </div>
+                    
+                    <div class="result-item">
+                        <h4>Risk Level</h4>
+                        <div class="result-value" id="risk-level" style="color: var(--warning);">Medium</div>
+                        <div class="result-unit">assessment</div>
+                    </div>
+                </div>
+                
+                <div class="dashboard">
+                    <h3>Multi-Asset Risk Dashboard</h3>
+                    <div class="dashboard-tabs">
+                        <button class="tab-btn active" data-tab="overview">Overview</button>
+                        <button class="tab-btn" data-tab="assets">Asset Details</button>
+                        <button class="tab-btn" data-tab="trends">Risk Trends</button>
+                    </div>
+                    
+                    <div class="tab-content active" id="overview">
+                        <div class="dashboard-grid">
+                            <div class="dashboard-card">
+                                <h4>Total Assets Monitored</h4>
+                                <div class="metric-value">24</div>
+                                <div class="metric-change positive">+3 this month</div>
+                            </div>
+                            <div class="dashboard-card">
+                                <h4>Average Risk Score</h4>
+                                <div class="metric-value">6.2</div>
+                                <div class="metric-change negative">+0.8 this month</div>
+                            </div>
+                            <div class="dashboard-card">
+                                <h4>Total Annual Loss Exposure</h4>
+                                <div class="metric-value">$12.5L</div>
+                                <div class="metric-change negative">+$2.4L this month</div>
+                            </div>
+                            <div class="dashboard-card">
+                                <h4>Critical Risks</h4>
+                                <div class="metric-value">5</div>
+                                <div class="metric-change negative">+2 this month</div>
+                            </div>
+                        </div>
+                        
+                        <div class="chart-container">
+                            <h4>Risk Distribution by Asset Type</h4>
+                            <canvas id="riskDistributionChart"></canvas>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="assets">
+                        <div class="table-container">
+                            <table class="risk-table">
+                                <thead>
+                                    <tr>
+                                        <th>Asset Name</th>
+                                        <th>Type</th>
+                                        <th>Value ($)</th>
+                                        <th>Exposure (%)</th>
+                                        <th>ARO</th>
+                                        <th>SLE ($)</th>
+                                        <th>ALE ($)</th>
+                                        <th>Risk Level</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="assetTableBody">
+                                    <!-- Table rows will be generated by JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="trends">
+                        <div class="chart-container">
+                            <h4>Risk Trends Over Time</h4>
+                            <canvas id="riskTrendsChart"></canvas>
+                        </div>
+                        <div class="chart-container">
+                            <h4>Top 5 High-Risk Assets</h4>
+                            <canvas id="highRiskChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coming Soon Section -->
+    <section class="coming-soon-features">
+        <div class="container">
+            <h2 class="section-title">Coming Soon Features</h2>
+            <div class="coming-features">
+                <div class="coming-feature">
+                    <i class="fas fa-table"></i>
+                    <div>
+                        <h4>Heatmap Table</h4>
+                        <p>Visual risk matrix for multiple assets</p>
+                    </div>
+                </div>
+                
+                <div class="coming-feature">
+                    <i class="fas fa-paint-brush"></i>
+                    <div>
+                        <h4>Automatic Risk Level Color Coding</h4>
+                        <p>Visual indicators for risk severity</p>
+                    </div>
+                </div>
+                
+                <div class="coming-feature">
+                    <i class="fas fa-chart-bar"></i>
+                    <div>
+                        <h4>Visualization Charts</h4>
+                        <p>Graphical representation of risk data</p>
+                    </div>
+                </div>
+                
+                <div class="coming-feature">
+                    <i class="fas fa-save"></i>
+                    <div>
+                        <h4>Save / Export Reports</h4>
+                        <p>Documentation and sharing capabilities</p>
+                    </div>
+                </div>
+                
+                <div class="coming-feature">
+                    <i class="fas fa-brain"></i>
+                    <div>
+                        <h4>AI-based Risk Suggestions</h4>
+                        <p>Intelligent recommendations for mitigation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack Section -->
+    <section id="tech" class="tech-stack-section">
+        <div class="container">
+            <h2 class="section-title">Technology Stack</h2>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <i class="fab fa-python"></i>
+                    <span>Python Flask</span>
+                </div>
+                
+                <div class="tech-item">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                
+                <div class="tech-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </div>
+                
+                <div class="tech-item">
+                    <i class="fab fa-js-square"></i>
+                    <span>JavaScript</span>
+                </div>
+                
+                <div class="tech-item">
+                    <i class="fas fa-table"></i>
+                    <span>Pandas</span>
+                </div>
+                
+                <div class="tech-item">
+                    <i class="fas fa-file-excel"></i>
+                    <span>OpenPyXL</span>
+                </div>
+                
+                <div class="tech-item">
+                    <i class="fas fa-server"></i>
+                    <span>Localhost</span>
+                </div>
+                
+                <div class="tech-item">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub Pages</span>
+                </div>
+                
+                <div class="tech-item">
+                    <i class="fas fa-cloud"></i>
+                    <span>Netlify</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <h2 class="section-title">Who Will Benefit From This System</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Cybersecurity Students</h3>
+                    <p>Learn and understand NIST risk assessment methodology through interactive visualization.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3>Risk Analysis Teams</h3>
+                    <p>Quantify and prioritize cybersecurity risks with real-time calculations and visualizations.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>SOC Centers</h3>
+                    <p>Assess potential financial impact of security incidents and prioritize response efforts.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Business IT Managers</h3>
+                    <p>Make informed decisions about security investments based on quantified risk data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section class="conclusion">
+        <div class="container">
+            <h2 class="section-title">Conclusion & Research Value</h2>
+            <div class="conclusion-content">
+                <p>The Cyber Risk Assessment Dashboard provides an interactive platform for understanding and applying the NIST risk assessment model. By visualizing the relationship between asset value, exposure factor, and attack frequency, users can gain insights into the financial impact of cybersecurity risks.</p>
+                <p>This tool improves understanding of the NIST risk model by making abstract concepts tangible through interactive controls and real-time calculations. It serves as a valuable educational resource for cybersecurity students and a practical tool for professionals involved in risk management.</p>
+                <p>The dashboard's ability to simulate different scenarios and evaluate financial cyber risk in real-time makes it a powerful instrument for training, decision-making, and strategic planning in cybersecurity risk management.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2023 Cyber Risk Assessment Dashboard. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
